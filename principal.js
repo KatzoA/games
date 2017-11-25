@@ -7,11 +7,13 @@ var estadoPrincipal = {
     preload: function () {
         // carga todos los recursos
         juego.load.image('fondo', 'img/bg.jpeg');
+        juego.load.image('pajaro', 'img/pajaro1.png')
     },
 
     create: function () {
         // mostrar en pantalla
         fondoJuego = juego.add.tileSprite(0, 0, 370, 550, 'fondo');
+        juego.add.sprite(0, 0, 'pajaro');
     },
 
     update: function () {
